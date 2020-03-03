@@ -10,126 +10,53 @@
             </h3>
         </div>
         <div class="team-info">
-            <div class="team-members">
-                <div class="team-photo">
-                    <img src="assets/images/team/img_team_1.jpg" alt="ramgopalavarna">
-                </div>
-                <div class="team-contacts">
-                    <div class="specialist">
-                        Mr. Ramgopalavarna
+            <?php
+            if(have_rows('tb_members_repeater')):
+                while(have_rows('tb_members_repeater')):
+                    the_row();
+                    ?>
+                    <div class="team-members">
+                        <div class="team-photo">
+                            <?php
+                            $image = get_sub_field('personal_photo');
+                            // dump($image);
+                            ?>
+                            <img src="<?php echo $image['sizes']['clients']; ?>" alt="ramgopalavarna">
+                        </div>
+                        <div class="team-contacts">
+                            <div class="specialist">
+                                <?php the_sub_field('name_field'); ?>
+                            </div>
+                            <div class="duty">
+                                <?php the_sub_field('duty_field'); ?>
+                            </div>
+                            <ul class="btn-social">
+                                <?php
+                                if(have_rows('social_buttons_repeater')):
+                                    while(have_rows('social_buttons_repeater')):
+                                        the_row();
+                                        ?>
+                                        <li>
+                                            <?php
+                                            $link = get_sub_field('social_link');
+                                            $target = $link['target'] ? ' target="_blank" ' : "";
+                                            $title = the_sub_field('sb_icon');
+                                            ?>
+                                            <a href="<?php echo $link['url']; ?>" <?php echo $target; ?>>
+                                                <?php echo $link[$title]; ?>
+                                            </a>
+                                        </li>
+                                        <?php
+                                    endwhile;
+                                endif;
+                                ?>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="duty">
-                        Data Specialist
-                    </div>
-                    <ul class="btn-social">
-                        <li>
-                            <a href="http://facebook.com" target="_blank">
-                                <i class="fab fa-facebook-f fa-fw"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://twitter.com" target="_blank">
-                                <i class="fab fa-twitter fa-fw"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://google.com" target="_blank">
-                                <i class="fab fa-google-plus-g fa-fw"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="team-members">
-                <div class="team-photo">
-                    <img src="assets/images/team/img_team_2.jpg" alt="menon">
-                </div>
-                <div class="team-contacts">
-                    <div class="specialist">
-                        Madhavikutti Menon
-                    </div>
-                    <div class="duty">
-                        Client Support
-                    </div>
-                    <ul class="btn-social">
-                        <li>
-                            <a href="http://facebook.com" target="_blank">
-                                <i class="fab fa-facebook-f fa-fw"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://twitter.com" target="_blank">
-                                <i class="fab fa-twitter fa-fw"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://google.com" target="_blank">
-                                <i class="fab fa-google-plus-g fa-fw"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="team-members">
-                <div class="team-photo">
-                    <img src="assets/images/team/img_team_3.jpg" alt="venkittaraman">
-                </div>
-                <div class="team-contacts">
-                    <div class="specialist">
-                        Dr. Venkittaraman
-                    </div>
-                    <div class="duty">
-                        Client Management
-                    </div>
-                    <ul class="btn-social">
-                        <li>
-                            <a href="http://facebook.com" target="_blank">
-                                <i class="fab fa-facebook-f fa-fw"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://twitter.com" target="_blank">
-                                <i class="fab fa-twitter fa-fw"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://google.com" target="_blank">
-                                <i class="fab fa-google-plus-g fa-fw"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="team-members">
-                <div class="team-photo">
-                    <img src="assets/images/team/img_team_4.jpg" alt="danial">
-                </div>
-                <div class="team-contacts">
-                    <div class="specialist">
-                        George Danial
-                    </div>
-                    <div class="duty">
-                        Communication
-                    </div>
-                    <ul class="btn-social">
-                        <li>
-                            <a href="http://facebook.com" target="_blank">
-                                <i class="fab fa-facebook-f fa-fw"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://twitter.com" target="_blank">
-                                <i class="fab fa-twitter fa-fw"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://google.com" target="_blank">
-                                <i class="fab fa-google-plus-g fa-fw"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+                    <?php
+                endwhile;
+            endif;
+            ?>
         </div>
     </div>
 </section>

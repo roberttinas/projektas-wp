@@ -229,4 +229,47 @@ class custom_navwalker extends Walker_Nav_Menu {
 		 */
 		$output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
 	}
+//CUSTOM IRASAS
+
+add_action( 'init', 'testimonial_posts_init' );
+/**
+ * Register a project post type.
+ *
+ * @link http://codex.wordpress.org/Function_Reference/register_post_type
+ */
+function testimonial_posts_init() {
+	$labels = array(
+		'name'               => _x( 'Testimonial', 'post type general name', 'vcs-starter' ),
+		'singular_name'      => _x( 'Testimonials', 'post type singular name', 'vcs-starter' ),
+		'menu_name'          => _x( 'Testimonial', 'admin menu', 'vcs-starter' ),
+		'name_admin_bar'     => _x( 'Testimonials', 'add new on admin bar', 'vcs-starter' ),
+		'add_new'            => _x( 'Add New', 'testimonial', 'vcs-starter' ),
+		'add_new_item'       => __( 'Add New Testimonials', 'vcs-starter' ),
+		'new_item'           => __( 'New Testimonials', 'vcs-starter' ),
+		'edit_item'          => __( 'Edit Testimonials', 'vcs-starter' ),
+		'view_item'          => __( 'View Testimonials', 'vcs-starter' ),
+		'all_items'          => __( 'All Testimonial', 'vcs-starter' ),
+		'search_items'       => __( 'Search Testimonial', 'vcs-starter' ),
+		'parent_item_colon'  => __( 'Parent Testimonial:', 'vcs-starter' ),
+		'not_found'          => __( 'No testimonials found.', 'vcs-starter' ),
+		'not_found_in_trash' => __( 'No testimonials found in Trash.', 'vcs-starter' )
+	);
+
+	$args = array(
+		'labels'             => $labels,
+        'description'        => __( 'Description.', 'vcs-starter' ),
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => array( 'slug' => __('testimonial') ),
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'hierarchical'       => false,
+		'menu_position'      => null,
+		'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' )
+	);
+
+	register_post_type( 'testimonial', $args );
 }
