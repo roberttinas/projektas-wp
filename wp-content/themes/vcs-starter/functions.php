@@ -22,8 +22,19 @@ function theme_scripts(){
     	//Registration
         wp_register_script('js_main', THEME_FOLDER . '/assets/js/main.js', array('jquery'), '1.0', true);
 
+		wp_register_script('fa', 'https://kit.fontawesome.com/8f49103de5.js', false, false, false);
+		wp_deregister_script('jquery');
+		wp_register_script('jquery', THEME_FOLDER . '/assets/scripts/jquery.js', array('fa'), false, true);
+		wp_register_script('fancybox', THEME_FOLDER . '/assets/scripts/jquery.fancybox.min.js', array('jquery'), false, true);
+		wp_register_script('slider', THEME_FOLDER . '/assets/scripts/tiny-slider.js', array('fancybox'), false, true);
+		wp_register_script('main-js', THEME_FOLDER . '/assets/scripts/projektas.js', array('slider'), false, true);
         //Loading
         wp_enqueue_script('js_main');
+		wp_enqueue_script('fa');
+		wp_enqueue_script('jquery');
+        wp_enqueue_script('fancybox');
+        wp_enqueue_script('slider');
+        wp_enqueue_script('main-js');
     }
 }
 add_action('wp_enqueue_scripts', 'theme_scripts');
