@@ -8,6 +8,7 @@ get_template_part('partials/header-contacts');
 get_template_part('partials/nav-menu');
 get_template_part('partials/hero');
 get_template_part('partials/introduction');
+get_template_part('partials/clients');
 ?>
 
 <!-- Start Point -->
