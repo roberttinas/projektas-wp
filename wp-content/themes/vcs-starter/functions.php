@@ -229,6 +229,10 @@ class custom_navwalker extends Walker_Nav_Menu {
 		 */
 		$output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
 	}
+if( function_exists('acf_add_options_page') ) {
+	acf_add_options_page();
+}
+
 //CUSTOM IRASAS
 
 add_action( 'init', 'testimonial_posts_init' );
