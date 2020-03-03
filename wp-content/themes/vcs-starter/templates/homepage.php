@@ -12,6 +12,7 @@ get_template_part('partials/clients');
 get_template_part('partials/features');
 get_template_part('partials/pricing');
 get_template_part('partials/team');
+get_template_part('partials/sign-up');
 ?>
 
 <!-- Start Point -->
