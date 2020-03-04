@@ -4,6 +4,10 @@
         <div class="container">
             <div class="logo-footer">
                 <a href="#">
+                    <?php
+                    $image = get_field('ho_logo_image', 'option');
+                    ?>
+                    <img src="<?php echo $image['sizes']['logo']; ?>" alt="<?php bloginfo('name'); ?>" class="logo">
                 </a>
             </div>
             <div class="menu-items">
