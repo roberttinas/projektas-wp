@@ -3,10 +3,8 @@
     <div class="container">
         <div class="team-header">
             <h2>
-                Team
             </h2>
             <h3>
-                Meet our team
             </h3>
         </div>
         <div class="team-info">
