@@ -2,6 +2,10 @@
 <section class="nav-menu">
     <div class="container flex-container">
         <a href="#">
+            <?php
+            $image = get_field('ho_logo_image', 'option');
+            ?>
+            <img src="<?php echo $image['sizes']['logo']; ?>" alt="<?php bloginfo('name'); ?>" class="logo">
         </a>
         <nav class="main-menu">
             <?php
