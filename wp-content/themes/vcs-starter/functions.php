@@ -55,6 +55,7 @@ add_action('wp_enqueue_scripts', 'theme_stylesheets');
 function register_theme_menus() {
    
 	register_nav_menus(array( 
+		'primary-navigation' => __( 'Primary Navigation' ),
 		'secondary-navigation' => __( 'Secondary Navigation' ),
     ));
 }
