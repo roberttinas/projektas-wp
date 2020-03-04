@@ -4,7 +4,6 @@
         <div class="container">
             <div class="logo-footer">
                 <a href="#">
-                    <img src="assets/images/img_logo.jpg" alt="logo">
                 </a>
             </div>
             <div class="menu-items">
