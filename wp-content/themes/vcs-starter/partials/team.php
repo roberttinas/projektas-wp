@@ -3,8 +3,10 @@
     <div class="container">
         <div class="team-header">
             <h2>
+                <?php the_field('tb_section_heading'); ?>
             </h2>
             <h3>
+                <?php the_field('tb_section_subheading'); ?>
             </h3>
         </div>
         <div class="team-info">
