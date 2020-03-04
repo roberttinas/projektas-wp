@@ -1,5 +1,6 @@
 <?php
 
+// IMG dydziai
 add_image_size('logo', 50, 50, false);
 add_image_size('clients', 500, 500, false);
 add_image_size('fb-bg-img', 230, 120, false);
