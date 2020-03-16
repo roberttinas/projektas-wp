@@ -87,6 +87,7 @@ body {
 	background-color: $ligthBg;
 	position: sticky;
 	top: 0;
+	z-index: 1;
 
 	.flex-container {
 		display: flex;
@@ -243,7 +244,6 @@ body {
 	.benefits-icons {
 		background-color: $darkerBg;
 		padding: 15px;
-		margin-bottom: 80px;
 	}
 
 	.benefits-icons:hover {
