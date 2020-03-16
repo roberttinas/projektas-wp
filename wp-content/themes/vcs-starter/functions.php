@@ -104,6 +104,7 @@ class custom_navwalker extends Walker_Nav_Menu {
 		$classes[] = 'contacts-phone';
 		$classes[] = 'contacts-mail';
 		// $classes[] = 'btn-style';
+		$classes[] = 'klases-pavadinimas';
 
 		/**
 		 * Filters the arguments for a single nav menu item.
@@ -220,6 +221,7 @@ class custom_navwalker extends Walker_Nav_Menu {
 		$output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
 	}
 }
+
 function dump($data){
 	echo "<pre>";
 	print_r($data);
