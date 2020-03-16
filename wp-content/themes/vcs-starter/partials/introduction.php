@@ -28,6 +28,7 @@
                     <div class="introduction-benefits-info flex-container">
                         <div class="benefits-icons">
                             <?php the_sub_field('icon'); ?>
+                            <i class="<?php the_sub_field('icon'); ?>"></i>
                         </div>
                         <div class="benefits-features">
                             <h3 class="introduction-info-header">
