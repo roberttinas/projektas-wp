@@ -22,6 +22,7 @@
                         <div class="text">
                             <h3>
                                 <?php the_sub_field('heading'); ?>
+                                <?php the_sub_field('sub_field_heading'); ?>
                             </h3>
                             <p>
                                 <?php the_sub_field('description'); ?>
