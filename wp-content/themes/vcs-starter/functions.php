@@ -102,9 +102,6 @@ class custom_navwalker extends Walker_Nav_Menu {
 		$classes[] = 'menu-item-' . $item->ID;
 		//uzdedame klase ant li elemento
 		$classes[] = 'contacts-phone';
-		$classes[] = 'contacts-mail';
-		// $classes[] = 'btn-style';
-		$classes[] = 'klases-pavadinimas';
 
 		/**
 		 * Filters the arguments for a single nav menu item.
