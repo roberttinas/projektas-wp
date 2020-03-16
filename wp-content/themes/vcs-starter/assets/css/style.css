@@ -209,12 +209,14 @@ body {
 }
 
 .introduction .introduction-benefits {
+    display: block;
     width: 40%;
     padding: 115px 0px 0px 0px;
 }
 
 .introduction .introduction-benefits-info {
     display: flex;
+    align-items: flex-start;
 }
 
 .introduction .benefits-icons {
@@ -436,6 +438,7 @@ body {
     font-size: 2.5rem;
     background-color: #e5eef0;
     padding: 15px 0px 15px 0px;
+    padding: 15px 0px;
 }
 
 .features-icon:hover {
@@ -452,6 +455,7 @@ body {
     align-items: flex-start;
     width: calc(33.33% - 20px);
     padding: 15px 0px 15px 0px;
+    padding: 15px 0px;
 }
 
 .features-info-description h3 {
