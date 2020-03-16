@@ -44,6 +44,7 @@
                                             ?>
                                             <a href="<?php echo $link['url']; ?>" <?php echo $target; ?>>
                                                 <?php echo $link[$title]; ?>
+                                                <i class="<?php the_sub_field('sb_icon'); ?>"></i>
                                             </a>
                                         </li>
                                         <?php
