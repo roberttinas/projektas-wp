@@ -1,5 +1,5 @@
 <!-- FEATURES ================================================== -->
-<section class="features">
+<section id="features_id" class="features">
     <div class="container">
         <div class="features-header">
             <h2>
