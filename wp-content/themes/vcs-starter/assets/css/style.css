@@ -8,6 +8,11 @@ body {
     margin: 0;
 }
 
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
 .container-header {
     background-color: #e5eef0;
 }
@@ -23,6 +28,7 @@ body {
 
 .container-header h4 {
     margin-top: 16px 40px 16px 0px;
+    margin: 16px 40px 16px 0px;
     font-family: "Karla", sans-serif;
     font-weight: 400;
     text-transform: uppercase;
@@ -54,6 +60,8 @@ body {
 
 .container-header ul .contacts-mail {
     padding: 20px 0px 20px 27px;
+    border: none;
+    padding: 20px 0px 20px 28px;
 }
 
 .container-header ul a {
@@ -177,6 +185,8 @@ body {
 
 .introduction h2, .introduction h4 {
     text-transform: uppercase;
+    letter-spacing: 0.025em;
+    margin: 0px;
 }
 
 .introduction .introduction-header h2 {
@@ -288,6 +298,7 @@ body {
 .clients-header h2, .clients-header h3 {
     text-transform: uppercase;
     letter-spacing: 0.025;
+    letter-spacing: 0.025em;
     margin: 0;
 }
 
@@ -395,6 +406,7 @@ body {
 .features-header h2, .features-header h3 {
     text-transform: uppercase;
     letter-spacing: 0.025;
+    letter-spacing: 0.025em;
     margin: 0;
 }
 
@@ -499,6 +511,7 @@ body {
 .pricing-header h2, .pricing-header h3 {
     text-transform: uppercase;
     letter-spacing: 0.025;
+    letter-spacing: 0.025em;
     margin: 0;
 }
 
@@ -527,6 +540,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.pricing-options:hover {
+    box-shadow: 0 10px 20px 0 rgba(29, 172, 201, 0.2), 0 6px 20px 0 rgba(29, 172, 201, 0.19);
 }
 
 .pricing-options .prices, .pricing-options h3, .pricing-options h4 {
@@ -562,6 +579,10 @@ body {
     text-transform: uppercase;
     font-size: 0.9375rem;
     letter-spacing: 0.075em;
+}
+
+.pricing-options a:hover {
+    background-color: #f7941d;
 }
 
 .pricing-options h3 {
@@ -625,6 +646,7 @@ body {
 .team-header h2, .team-header h3 {
     text-transform: uppercase;
     letter-spacing: 0.025;
+    letter-spacing: 0.025em;
     margin: 0;
 }
 
@@ -767,18 +789,22 @@ body {
 .bg-img {
     background-image: url("../images/bg_blue.png");
     background-size: 28%;
+    background-size: 25%;
     background-repeat: no-repeat;
     background-position: right bottom;
 }
 
 .footer-contacts {
     background-image: url("../images/bg_orange.png");
+.bg-img .footer-contacts {
     background-size: 25%;
     background-repeat: no-repeat;
     background-position: 0% 100%;
+    position: relative;
 }
 
 .footer-contacts .container {
+.bg-img .footer-contacts .container {
     display: flex;
     justify-content: space-between;
     padding: 75px 0px;
@@ -786,22 +812,31 @@ body {
 }
 
 .footer-contacts .container a {
+.bg-img .footer-contacts .container a {
     color: #93a1a7;
     text-decoration: none;
     text-transform: uppercase;
 }
 
 .footer-contacts .container a:hover {
+.bg-img .footer-contacts .container a:hover {
+    color: #23282f;
+}
+
+.bg-img .footer-contacts .container .social:hover {
     color: #0000ff;
 }
 
 .footer-contacts ul {
+.bg-img .footer-contacts ul {
     margin: 0 auto;
+    margin-left: 0px;
     list-style-type: none;
     padding: 0px;
 }
 
 .footer-contacts h3 {
+.bg-img .footer-contacts h3 {
     margin: 0 auto;
     padding-bottom: 10px;
     font-family: "Raleway", sans-serif;
@@ -813,6 +848,7 @@ body {
 }
 
 .footer-contacts li {
+.bg-img .footer-contacts li {
     font-family: "Karla", sans-serif;
     font-size: 0.875rem;
     font-weight: 400;
@@ -821,34 +857,47 @@ body {
 }
 
 .footer-contacts li span {
+.bg-img .footer-contacts li span {
     color: #23282f;
     font-weight: 700;
 }
 
 .logo-footer img {
+.bg-img .logo-footer img {
     max-width: 100%;
 }
 
 .logo-footer {
+.bg-img .logo-footer {
     width: 17%;
     margin-bottom: 10px;
 }
 
 .menu-items {
     width: 16.5%;
+.bg-img .menu-items {
+    width: 33%;
     margin-bottom: 10px;
+    color: #93a1a7;
+}
+
+.bg-img .columns {
+    display: flex;
 }
 
 .contact-items, .newsletter {
+.bg-img .contact-items, .bg-img .newsletter {
     width: 25%;
     margin-bottom: 10px;
 }
 
 .contact-items li {
+.bg-img .contact-items li {
     display: flex;
 }
 
 .newsletter p {
+.bg-img .newsletter p {
     margin: 0 auto;
     font-family: "Karla", sans-serif;
     font-size: 0.875rem;
@@ -861,15 +910,18 @@ body {
 }
 
 .social h3 {
+.bg-img .social h3 {
     padding: 18px;
 }
 
 input {
+.bg-img input {
     padding: 15px;
     border: 1px solid #d7e3e6;
 }
 
 input::placeholder {
+.bg-img input::placeholder {
     font-family: "Karla", sans-serif;
     font-size: 0.75rem;
     font-weight: 500;
@@ -879,6 +931,7 @@ input::placeholder {
 }
 
 .btn-submit {
+.bg-img .btn-submit {
     border: none;
     padding: 15px 10px;
     background-color: #29c2e1;
@@ -891,6 +944,7 @@ input::placeholder {
 }
 
 .btn-submit:hover {
+.bg-img .btn-submit:hover {
     background-color: #f7941d;
 }
 
