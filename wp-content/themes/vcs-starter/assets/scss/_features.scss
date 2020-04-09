@@ -1,0 +1,105 @@
+.features {
+	background-color: $ligthBg;
+
+	.container {
+		border-bottom: 1px solid $contactsBorderColor;
+		background-repeat: no-repeat;
+		background-position: 100% 100%;
+	}
+}
+
+.features-header {
+	padding: 115px 0px 20px 0px;
+
+	h2, h3 {
+		text-transform: uppercase;
+		letter-spacing: 0.025em;
+		margin: 0;
+	}
+			
+	h2 {
+		font-family: $heroFont;
+		font-size: 1.875rem;
+		font-weight: 800;
+	}
+
+	h3 {
+		font-family: $headerFont;
+		font-size: 1.125rem;
+		font-weight: 400;
+	}
+}
+
+.features-info {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.object {
+	text-align: center;
+}
+
+.features-icon {
+	width: 25%;
+	text-align: center;
+	font-size: 2.5rem;
+	background-color: $darkerBg;
+	padding: 15px 0px 15px 0px;
+	padding: 15px 0px;
+}
+
+.features-icon:hover {
+	background-color: $objColor;
+}
+
+.text {
+	width: 75%;
+	padding: 0px 0px 0px 30px;
+}
+
+.features-info-description {
+	display: flex;
+	align-items: flex-start;
+	width: calc(33.33% - 20px);
+	padding: 15px 0px 15px 0px;
+	padding: 15px 0px;
+
+	h3 {
+		font-family: $heroFont;
+		font-size: 1.25rem;
+		font-weight: 500;
+		line-height: 1.2;
+		letter-spacing: 0.025em;
+		color: $mainFontColorDark;
+		margin: 0;
+	}
+
+	p {
+		font-family: $introParagraphFont;
+		font-size: 0.875rem;
+		font-weight: 400;
+		line-height: 1.71;
+		color: $mainFontColorLighter;
+	}
+}
+
+.object {
+	padding: 45px 0px 100px 0px;
+
+	a {
+		background-color: $btnColor;
+		padding: 12px 19px 12px 19px;
+		border-radius: 30px;
+		color: $ligthBg;
+		text-decoration: none;
+		font-family: $headerFont;
+		text-transform: uppercase;
+		font-size: 0.9375rem;
+		letter-spacing: 0.075em;
+	}
+
+	a:hover {
+		background-color: $iconBgColorDarker;
+	}
+}
