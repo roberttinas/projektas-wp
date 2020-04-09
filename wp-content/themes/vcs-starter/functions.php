@@ -101,7 +101,6 @@ class custom_navwalker extends Walker_Nav_Menu {
 		$classes = empty( $item->classes ) ? array() : (array) $item->classes;
 		$classes[] = 'menu-item-' . $item->ID;
 		//uzdedame klase ant li elemento
-		$classes[] = 'contacts-phone';
 
 		/**
 		 * Filters the arguments for a single nav menu item.
