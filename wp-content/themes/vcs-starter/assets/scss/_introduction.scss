@@ -1,0 +1,108 @@
+.introduction {
+	background-color: $ligthBg;
+	
+	.container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.introduction-content {
+		width: 60%;
+		padding: 115px 30px 0px 0px;
+	}
+
+	h2, h4 {
+		text-transform: uppercase;
+		letter-spacing: 0.025em;
+		margin: 0px;
+	}
+
+	.introduction-header h2{
+		font-family: $heroFont;
+		font-size: 1.875rem;
+		font-weight: 800;
+	}
+
+	.introduction-header h4 {
+		font-family: $headerFont;
+		font-size: 1.125rem;
+		font-weight: 400;
+	}
+
+	.startup {
+		margin: 0;
+		padding: 20px 0px 27px 0px;
+		font-family: $introParagraphFont;
+		font-size: 0.875rem;
+		font-weight: 400;
+		line-height: 1.71;
+		color: $mainFontColorLighter;
+	}
+
+	.introduction-benefits {
+		display: block;
+		width: 40%;
+		padding: 115px 0px 0px 0px;
+	}
+
+	.introduction-benefits-info {
+		display: flex;
+		align-items: flex-start;
+	}
+
+	.benefits-icons {
+		background-color: $darkerBg;
+		padding: 15px;
+	}
+
+	.benefits-icons:hover {
+		background-color: $objColor;
+	}
+
+	.introduction-benefits-info h3 {
+		margin: 0;
+		font-family: $heroFont;
+		font-size: 1.25rem;
+		font-weight: 500;
+		letter-spacing: 0.025em;
+		color: $mainFontColorDark;
+	}
+
+	.benefits {
+		font-family: $introParagraphFont;
+		font-size: 0.875rem;
+		font-weight: 400;
+		line-height: 1.71;
+		color: $mainFontColorLighter;
+	}
+
+	.benefits-features {
+		padding: 0px 0px 0px 15px;
+	}
+
+	.benefits-features-btn {
+		padding-left: 65px;
+		margin-top: 30px;
+	}
+
+	.btn-style {
+		background-color: $btnColor;
+		padding: 12px 19px 12px 19px;
+		border-radius: 30px;
+		color: $ligthBg;
+		text-decoration: none;
+		font-family: $headerFont;
+		text-transform: uppercase;
+		font-size: 0.9375rem;
+		letter-spacing: 0.075em;
+	}
+
+	.btn-style:hover {
+		background-color: $iconBgColorDarker;
+	}
+}
+
+.photos {
+	width: 100%;
+	padding: 0px 95px 0px 0px;
+}
