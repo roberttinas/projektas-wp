@@ -27,16 +27,15 @@
                     ?>
                     <div class="introduction-benefits-info flex-container">
                         <div class="benefits-icons">
-                            <?php the_sub_field('icon'); ?>
                             <i class="<?php the_sub_field('icon'); ?>"></i>
                         </div>
                         <div class="benefits-features">
                             <h3 class="introduction-info-header">
                                 <?php the_sub_field('heading'); ?>
                             </h3>
-                            <p class="benefits">
+                            <div class="benefits">
                                 <?php the_sub_field('description'); ?>
-                            </p>
+                            </div>
                         </div>
                     </div>
                     <?php
