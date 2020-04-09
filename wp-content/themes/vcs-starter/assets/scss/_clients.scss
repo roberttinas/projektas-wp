@@ -1,0 +1,109 @@
+.clients {
+	background-color: $darkerBg;
+	
+	.flex-container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.container {
+		padding: 0px 0px 90px 0px;
+	}
+}
+
+.clients-header {
+	padding: 115px 0px 35px 0px;
+
+	h2, h3 {
+		text-transform: uppercase;
+		letter-spacing: 0.025em;
+		margin: 0;
+	}
+			
+	h2 {
+		font-family: $heroFont;
+		font-size: 1.875rem;
+		font-weight: 800;
+	}
+
+	h3 {
+		font-family: $headerFont;
+		font-size: 1.125rem;
+		font-weight: 400;
+	}
+}
+
+.clients-info-description {
+	font-family: $clientsFont;
+	font-size: 0.9375rem;
+	line-height: 1.6;
+	font-weight: 400;
+	font-style: italic;
+	padding: 0px 40px 50px 0px;
+	margin: 0;
+	color: $mainFontColorLighter;
+}
+
+.author {
+	font-family: $headerFont;
+	font-size: 0.875rem;
+	font-weight: 400;
+	line-height: 1.4;
+	letter-spacing: 0.025em;
+	color: $mainFontColorLighter;
+}
+
+.author_name {
+	font-family: $headerFont;
+	font-size: 0.875rem;
+	font-weight: 400;
+	letter-spacing: 0.025em;
+	color: $objColor;
+	text-transform: uppercase;
+}
+
+.qmark {
+	width: 6%;
+	padding: 0px 40px 0px 0px;
+	font-size: 3rem;
+	font-weight: 400;
+	letter-spacing: 0.025em;
+}
+
+.clients-header-info {
+	width: 54%;
+	border-right: 1px solid $contactsBorderColor;
+}
+
+.clients-images {
+	width: 40%;
+	padding: 30px 0px 30px 0px;
+
+	.photo {
+		padding: 0px 15px;
+	}
+}
+
+.photo {
+	img {
+		width: 100%;
+		border-radius: 50%;
+	}
+}
+
+.tns-nav {
+	text-align: center;
+	margin-top: 5px;
+}
+
+.tns-nav button {
+	background-color: $fontColorLigther;
+	border: none;
+	border-radius: 50%;
+	padding: 6px;
+	margin: 0px 4px;
+}
+
+.tns-nav button:hover {
+	background-color: $btnColor;
+}
