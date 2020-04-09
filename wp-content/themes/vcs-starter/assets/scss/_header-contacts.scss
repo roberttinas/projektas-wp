@@ -1,0 +1,53 @@
+.container-header {
+	background-color: $darkerBg;
+
+	.container {
+		font-family: $headerFont;
+		font-weight: 400;
+		text-transform: uppercase;
+		color: $fontColorLigther;
+		font-size: 0.8125rem;
+		letter-spacing: 0.075em;
+	}
+
+	h4 {
+		margin: 16px 40px 16px 0px;
+		font-family: $headerFont;
+		font-weight: 400;
+		text-transform: uppercase;
+		color: $fontColorLigther;
+		font-size: 0.8125rem;
+		letter-spacing: 0.075em;
+	}
+
+	.flex-container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.header-contacts {
+		display: flex;
+	}
+
+	ul {
+		list-style-type: none;
+		align-items: center;
+		margin: 0;
+		padding-left: 0px;
+
+		.contacts-phone {
+			border-right: 1px solid $contactsBorderColor;
+			padding: 20px 28px 20px 0px;
+		}
+
+		.contacts-mail {
+			border: none;
+			padding: 20px 0px 20px 28px;
+		}
+
+		a {
+			text-decoration: none;
+			color: $fontColorLigther;
+		}
+	}
+}
