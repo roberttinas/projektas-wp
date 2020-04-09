@@ -742,6 +742,7 @@ body {
     font-size: 0.8125rem;
     font-weight: 500;
     line-height: 1.84;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #55595f;
 }
