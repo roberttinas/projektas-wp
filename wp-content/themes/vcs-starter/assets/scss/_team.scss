@@ -1,0 +1,95 @@
+.team {
+	background-color: $darkerBg;
+
+	.container {
+		padding: 0px 0px 80px 0px;
+	}
+}
+
+.team-header {
+	padding: 115px 0px 20px 0px;
+
+	h2, h3 {
+		text-transform: uppercase;
+		letter-spacing: 0.025em;
+		margin: 0;
+	}
+			
+	h2 {
+		font-family: $heroFont;
+		font-size: 1.875rem;
+		font-weight: 800;
+	}
+
+	h3 {
+		font-family: $headerFont;
+		font-size: 1.125rem;
+		font-weight: 400;
+	}
+}
+
+.team-info {
+	display: flex;
+	justify-content: space-between;
+
+	.specialist .duty {
+		margin: 0;
+	}
+
+	ul {
+		list-style-type: none;
+		padding: 16px 0px 0px 0px;
+		margin: 0;
+	}
+
+	.team-members {
+		width: calc(25% - 22.5px);
+		background-color: $ligthBg;
+		margin-bottom: 20px;
+	}
+	
+}
+
+.team-members:hover {
+	box-shadow: 0 10px 20px 0 rgba(29, 172, 201, 0.2), 0 6px 20px 0 rgba(29, 172, 201, 0.19);
+}
+
+.team-photo img {
+	width: 100%;
+}
+
+.specialist {
+	font-family: $headerFont;
+	font-size: 0.8125rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 1.42;
+	letter-spacing: 0.025em;
+	color: $mainFontColorDark;
+}
+
+.duty {
+	font-family: $headerFont;
+	font-size: 0.8125rem;
+	font-weight: 500;
+	line-height: 1.42;
+	letter-spacing: 0.025em;
+	color: $iconBgColorDarker;
+}
+
+.btn-social {
+	display: flex;
+}
+
+.team-contacts {
+	margin: 28px;
+
+	a {
+		padding-right: 14px;
+		color: $fontColorLigther;
+	}
+
+	a:hover {
+		color: $socialBtnColor;
+	}
+}
