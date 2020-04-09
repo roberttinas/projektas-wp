@@ -1,5 +1,5 @@
 <!-- TEAM MEMBERS ================================================== -->
-<section class="team">
+<section id="team_id" class="team">
     <div class="container">
         <div class="team-header">
             <h2>
@@ -40,10 +40,8 @@
                                             <?php
                                             $link = get_sub_field('social_link');
                                             $target = $link['target'] ? ' target="_blank" ' : "";
-                                            $title = the_sub_field('sb_icon');
                                             ?>
                                             <a href="<?php echo $link['url']; ?>" <?php echo $target; ?>>
-                                                <?php echo $link[$title]; ?>
                                                 <i class="<?php the_sub_field('sb_icon'); ?>"></i>
                                             </a>
                                         </li>
