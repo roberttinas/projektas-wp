@@ -1,0 +1,135 @@
+.bg-img {
+	background-size: 25%;
+	background-repeat: no-repeat;
+	background-position: right bottom;
+
+	.footer-contacts {
+		background-size: 25%;
+		background-repeat: no-repeat;
+		background-position: 0% 100%;
+		position: relative;
+	
+		.container {
+			display: flex;
+			justify-content: space-between;
+			padding: 75px 0px;
+			border-bottom: 1px solid $contactsBorderColor;
+	
+			a {
+				color: $fontColorLigther;
+				text-decoration: none;
+				text-transform: uppercase;
+				&:hover {
+					color: $mainFontColorDark;
+				}
+			}
+	
+			.social:hover {
+				color: $socialBtnColor;
+			}
+		}
+	
+		ul {
+			margin: 0 auto;
+			margin-left: 0px;
+			list-style-type: none;
+			padding: 0px;
+		}
+	
+		h3 {
+			margin: 0 auto;
+			padding-bottom: 10px;
+			font-family: $heroFont;
+			font-size: 1.125rem;
+			font-weight: 500;
+			line-height: 1.33;
+			letter-spacing: 0.025em;
+			color: $mainFontColorDark;
+		}
+	
+		li {
+			font-family: $headerFont;
+			font-size: 0.875rem;
+			font-weight: 400;
+			line-height: 2.5;
+			letter-spacing: 0.075em;
+	
+			span {
+				color: $mainFontColorDark;
+				font-weight: 700;
+			}
+		}
+	}
+	
+	.logo-footer img {
+		max-width: 100%;
+	}
+	
+	.logo-footer {
+		width: 17%;
+		margin-bottom: 10px;
+	}
+	
+	.menu-items {
+		width: 33%;
+		margin-bottom: 10px;
+		color: $fontColorLigther;
+	}
+	
+	.columns {
+		display: flex;
+	}
+	
+	.contact-items, .newsletter {
+		width: 25%;
+		margin-bottom: 10px;
+	}
+	
+	.contact-items li {
+		display: flex;
+	}
+	
+	.newsletter p {
+		margin: 0 auto;
+		font-family: $headerFont;
+		font-size: 0.875rem;
+		font-weight: 400;
+		line-height: 2.5;
+		letter-spacing: 0.075em;
+		color: $fontColorLigther;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+	
+	.social h3 {
+		padding: 18px;
+	}
+	
+	input {
+		padding: 15px;
+		border: 1px solid $contactsBorderColor;
+		&::placeholder {
+			font-family: $headerFont;
+			font-size: 0.75rem;
+			font-weight: 500;
+			text-transform: uppercase;
+			letter-spacing: 0.075em;
+			color: $fontColorLigther;
+		}
+	}
+	
+	.btn-submit {
+		border: none;
+		padding: 15px 10px;
+		background-color: $btnColor;
+		font-family: $teamMemberNameFont;
+		font-size: 0.75rem;
+		font-weight: 500;
+		text-transform: uppercase;
+		letter-spacing: 0.075em;
+		color: $ligthBg;
+		&:hover {
+			background-color: $iconBgColorDarker;
+		}
+	}
+}
