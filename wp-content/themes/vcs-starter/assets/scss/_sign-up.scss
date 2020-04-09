@@ -1,0 +1,58 @@
+.sign-up {
+	background-color: $ligthBg;
+
+	.container {
+		padding: 98px 0px;
+		text-align: center;
+		border-bottom: 1px solid $contactsBorderColor;
+	}
+	
+	h1 {
+		margin: 0 auto;
+		font-family: $heroFont;
+		font-size: 1.875rem;
+		font-weight: 500;
+		line-height: 1.5;
+		letter-spacing: 0.025em;
+		text-transform: capitalize;
+		color: $mainFontColorDark;
+
+			span {
+				color: $objColor;
+			}
+	}
+
+	h3 {
+		margin: 0 auto;
+		font-family: $heroFont;
+		font-size: 0.8125rem;
+		font-weight: 500;
+		line-height: 1.84;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color: $mainFontColorLighter;
+	}
+}
+
+.btn-contacts {
+	margin-top: 30px;
+	display: inline-block;
+
+	a:hover {
+		background-color: $iconBgColorDarker;
+	}
+
+	a {
+		background-color: $btnColor;
+		padding: 12px;
+		margin: 0px 10px;
+		border-radius: 30px;
+		border: none;
+		font-family: $headerFont;
+		text-transform: uppercase;
+		font-size: 0.9375rem;
+		letter-spacing: 0.075em;
+		color: $ligthBg;
+		text-decoration: none;
+	}
+}
