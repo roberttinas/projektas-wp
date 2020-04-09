@@ -1,0 +1,122 @@
+.pricing {
+	background-color: $ligthBg;
+	
+	.container {
+		padding: 0px 0px 80px 0px;
+	}
+}
+
+.pricing-header {
+	padding: 115px 0px 20px 0px;
+
+	h2, h3 {
+		text-transform: uppercase;
+		letter-spacing: 0.025em;
+		margin: 0;
+	}
+			
+	h2 {
+		font-family: $heroFont;
+		font-size: 1.875rem;
+		font-weight: 800;
+	}
+
+	h3 {
+		font-family: $headerFont;
+		font-size: 1.125rem;
+		font-weight: 400;
+	}
+}
+
+.pricing-info {
+	display: flex;
+	justify-content: space-between;
+}
+
+.pricing-options {
+	margin-bottom: 20px;
+	border: 1px solid $contactsBorderColor;
+	text-align: center;
+	width: calc(25% - 22.5px);
+	display: flex;
+	flex-direction: column;
+    justify-content: space-between;
+    &:hover {
+        box-shadow: 0 10px 20px 0 rgba(29, 172, 201, 0.2), 0 6px 20px 0 rgba(29, 172, 201, 0.19);
+    }
+
+	.prices, h3, h4 {
+		margin: 0;
+	}
+
+	ul {
+		list-style-type: none;
+		padding: 0px;
+	}
+
+	.benefits {
+		margin: 0;
+		padding: 40px 0px 25px 0px;
+		font-family: $introParagraphFont;
+		font-size: 0.9375rem;
+		font-weight: 400;
+		line-height: 2.4;
+		color: $mainFontColorLighter;
+	}
+
+	.btn {
+		padding: 35px 0px 35px 0px;
+	}
+
+	a {
+		background-color: $btnColor;
+		padding: 12px 19px 12px 19px;
+		border-radius: 30px;
+		color: $ligthBg;
+		text-decoration: none;
+		font-family: $headerFont;
+		text-transform: uppercase;
+		font-size: 0.9375rem;
+        letter-spacing: 0.075em;
+        &:hover {
+            background-color: $iconBgColorDarker;
+        }
+	}
+
+	h3 {
+		padding: 30px 0px 13px 0px;
+		font-family: $heroFont;
+		font-size: 1.25rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: $mainFontColorDark;
+	}
+	
+	h4 {
+		padding: 20px 0px 20px 0px;
+		font-family: $heroFont;
+		font-size: 1.125rem;
+		font-weight: 500;
+		color: $mainFontColorLighter;
+	
+		span {
+			color: $objColor;
+		}
+	}
+	
+	h3, h4 {
+	border-bottom: 1px solid $contactsBorderColor;
+	}
+}
+
+.recommend {
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 93px;
+        height: 93px;
+        display: block;
+        background-image: url("../images/recommend.png");
+    }
+}
